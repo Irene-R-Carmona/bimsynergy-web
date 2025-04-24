@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIMSynergy – Digital Twin Platform</title>
+    <link
+      rel="alternate icon"
+      href="assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-inter">
+    <!-- Top Global Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-30">
+      <nav
+        class="container mx-auto flex items-center justify-between py-4 px-6"
+      >
+        <div class="flex items-center">
+          <img src="assets/logo.svg" alt="BIMSynergy Logo" class="h-8 mr-3" />
+          <span class="text-xl font-bold text-blue-700 tracking-wider"
+            >BIMSynergy</span
+          >
+        </div>
+        <ul class="flex space-x-8 font-semibold text-base">
+          <li>
+            <a href="#about" class="nav-link hover:text-blue-600">About</a>
+          </li>
+          <li>
+            <a href="#features" class="nav-link hover:text-blue-600"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a href="#future" class="nav-link hover:text-blue-600">Vision</a>
+          </li>
+          <li>
+            <a href="#dashboard" class="nav-link hover:text-blue-600"
+              >Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link hover:text-blue-600">Contact</a>
+          </li>
+        </ul>
+        <div>
+          <img
+            src="https://randomuser.me/api/portraits/women/50.jpg"
+            alt="User profile"
+            class="rounded-full h-8 w-8 border-2 border-blue-700"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto px-4 mt-8 flex flex-col md:flex-row">
+      <!-- Project/Section Dashboard Navigation (Sidebar) -->
+      <aside class="md:w-1/5 mb-6 md:mb-0 md:mr-8">
+        <nav class="bg-white rounded-lg shadow p-4 sticky top-28">
+          <h2 class="text-lg font-bold mb-4 text-blue-700">Project Menu</h2>
+          <div class="mb-4">
+            <label class="block text-xs font-semibold mb-1 text-gray-500"
+              >Active Project</label
+            >
+            <select class="w-full border rounded px-2 py-1 text-sm">
+              <option>Central Office Tower</option>
+              <option>North Hospital</option>
+              <option>Green Campus</option>
+            </select>
+          </div>
+          <div class="mb-6">
+            <label class="block text-xs font-semibold mb-1 text-gray-500"
+              >Project Sections</label
+            >
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#dashboard"
+                  class="block px-3 py-2 rounded hover:bg-blue-50 font-medium"
+                  >Overview</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#digital-twin"
+                  class="block px-3 py-2 rounded hover:bg-blue-50 font-medium"
+                  >Digital Twin</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#iot"
+                  class="block px-3 py-2 rounded hover:bg-blue-50 font-medium"
+                  >IoT Hub</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#analytics"
+                  class="block px-3 py-2 rounded hover:bg-blue-50 font-medium"
+                  >Analytics</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#sustainability"
+                  class="block px-3 py-2 rounded hover:bg-blue-50 font-medium"
+                  >Sustainability</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#compliance"
+                  class="block px-3 py-2 rounded hover:bg-blue-50 font-medium"
+                  >Compliance</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#collab"
+                  class="block px-3 py-2 rounded hover:bg-blue-50 font-medium"
+                  >Collaboration</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#facility"
+                  class="block px-3 py-2 rounded hover:bg-blue-50 font-medium"
+                  >Facility</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold mb-1 text-gray-500"
+              >Notifications</label
+            >
+            <ul class="text-xs text-gray-700 space-y-1">
+              <li>✔️ BIM model updated</li>
+              <li>⚠️ HVAC maintenance due soon</li>
+              <li>✔️ LEED Gold achieved</li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- SPA Sections -->
+      <section class="md:w-4/5">
+        <!-- ABOUT -->
+        <section id="about" class="spa-section mb-16">
+          <div
+            class="relative bg-blue-800 text-white rounded-lg overflow-hidden mb-8"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+              alt="Smart building"
+              class="absolute inset-0 w-full h-full object-cover opacity-30"
+            />
+            <div
+              class="relative z-10 p-8 md:p-16 flex flex-col md:flex-row items-center"
+            >
+              <div class="md:w-2/3">
+                <h1
+                  class="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow"
+                >
+                  BIMSynergy: The Future of Smart Building Management
+                </h1>
+                <p class="mb-6 text-lg md:text-xl">
+                  Transform your BIM models into intelligent digital twins.
+                  Monitor, analyze, and optimize your buildings with real-time
+                  IoT data, AI analytics, and sustainability metrics.
+                </p>
+                <a
+                  href="#dashboard"
+                  class="inline-block bg-white text-blue-800 px-6 py-3 rounded font-semibold shadow hover:bg-blue-100 transition"
+                  >Go to Dashboard</a
+                >
+              </div>
+              <div class="md:w-1/3 flex justify-center mt-8 md:mt-0">
+                <img
+                  src="assets/logo.svg"
+                  alt="BIMSynergy Logo"
+                  class="h-32 w-32 drop-shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow p-8 mb-8">
+            <h2 class="text-3xl font-bold text-blue-700 mb-4">
+              What is BIMSynergy?
+            </h2>
+            <p class="mb-4">
+              <strong>BIMSynergy</strong> is a digital platform that merges
+              Building Information Modeling (BIM) with digital twins, IoT, and
+              AI. It allows you to visualize, monitor, and optimize your
+              building’s performance in real time, from design and construction
+              to daily operations and maintenance.
+            </p>
+            <ul class="list-disc ml-6 mb-4">
+              <li>
+                Connects BIM models (Revit, ArchiCAD, etc.) with live IoT data
+              </li>
+              <li>
+                Provides real-time dashboards for energy, occupancy, and climate
+              </li>
+              <li>Offers AI-powered analytics and predictive maintenance</li>
+              <li>
+                Automates sustainability tracking and compliance reporting
+              </li>
+              <li>
+                Facilitates collaboration between all project stakeholders
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section id="features" class="spa-section mb-16">
+          <h2 class="text-3xl font-bold text-blue-700 mb-4">Key Features</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg shadow p-6">
+              <h3 class="text-xl font-semibold text-blue-600 mb-2">
+                Digital Twin Engine
+              </h3>
+              <p>
+                Transforms BIM models into interactive, real-time digital twins.
+                Visualize your building’s status, assets, and performance at a
+                glance.
+              </p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+              <h3 class="text-xl font-semibold text-blue-600 mb-2">
+                IoT Integration Hub
+              </h3>
+              <p>
+                Connects seamlessly with building sensors and systems. Collects
+                and displays live data on energy, temperature, occupancy, air
+                quality, and more.
+              </p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+              <h3 class="text-xl font-semibold text-blue-600 mb-2">
+                AI-Powered Analytics
+              </h3>
+              <p>
+                Uses machine learning to detect patterns, predict maintenance
+                needs, and suggest optimizations for energy and resource use.
+              </p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+              <h3 class="text-xl font-semibold text-blue-600 mb-2">
+                Sustainability Dashboard
+              </h3>
+              <p>
+                Tracks carbon footprint, water usage, and other sustainability
+                metrics. Supports compliance with LEED, BREEAM, and local codes.
+              </p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+              <h3 class="text-xl font-semibold text-blue-600 mb-2">
+                Collaborative Workflows
+              </h3>
+              <p>
+                Enables seamless communication and task management for
+                architects, engineers, facility managers, and building owners.
+              </p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-6">
+              <h3 class="text-xl font-semibold text-blue-600 mb-2">
+                Automated Compliance
+              </h3>
+              <p>
+                Checks your designs and operations against building codes and
+                sustainability standards, providing instant feedback and
+                reporting.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- FUTURE VISION -->
+        <section id="future" class="spa-section mb-16">
+          <h2 class="text-3xl font-bold text-blue-700 mb-4">
+            Our Vision for the Future
+          </h2>
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-2/3">
+              <ul class="list-disc ml-6 mb-4">
+                <li>
+                  Digital twins will become the standard for smart, sustainable
+                  buildings
+                </li>
+                <li>
+                  Full lifecycle integration will enable seamless management
+                  from design to demolition
+                </li>
+                <li>
+                  AI will drive predictive and autonomous building operations
+                </li>
+                <li>
+                  BIMSynergy will help you achieve and prove your sustainability
+                  goals
+                </li>
+                <li>
+                  Open integration with smart city and cloud systems will create
+                  new possibilities
+                </li>
+              </ul>
+              <p>
+                <strong>BIMSynergy</strong> is more than a tool—it is your
+                partner for a smarter, greener, and more connected future in
+                building management.
+              </p>
+            </div>
+            <div class="md:w-1/3 flex justify-center mt-8 md:mt-0">
+              <img
+                src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80"
+                alt="Team working"
+                class="rounded-lg shadow-lg w-full max-w-xs"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- DASHBOARD -->
+        <section id="dashboard" class="spa-section mb-16 hidden">
+          <h2 class="text-3xl font-bold text-blue-700 mb-4">
+            Project Dashboard Overview
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white rounded-lg shadow p-4">
+              <h3 class="font-semibold mb-2">Energy Usage (24h)</h3>
+              <p class="text-2xl font-bold text-blue-600" id="energy-usage">
+                1,234 kWh
+              </p>
+              <div class="h-2 bg-blue-100 rounded mt-2">
+                <div class="h-2 bg-blue-500 rounded" style="width: 60%"></div>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">
+                Compared to avg: <span id="energy-compare">+5%</span>
+              </p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4">
+              <h3 class="font-semibold mb-2">Indoor Humidity</h3>
+              <p class="text-2xl font-bold text-green-600" id="humidity">45%</p>
+              <div class="h-2 bg-green-100 rounded mt-2">
+                <div class="h-2 bg-green-500 rounded" style="width: 45%"></div>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">Optimal: 40-60%</p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4">
+              <h3 class="font-semibold mb-2">Temperature</h3>
+              <p class="text-2xl font-bold text-red-600" id="temperature">
+                22°C
+              </p>
+              <div class="h-2 bg-red-100 rounded mt-2">
+                <div class="h-2 bg-red-500 rounded" style="width: 70%"></div>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">Comfort: 20-24°C</p>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4">
+              <h3 class="font-semibold mb-2">Occupancy</h3>
+              <p class="text-2xl font-bold text-purple-600" id="occupancy">
+                68%
+              </p>
+              <div class="h-2 bg-purple-100 rounded mt-2">
+                <div
+                  class="h-2 bg-purple-500 rounded"
+                  id="occupancy-bar"
+                  style="width: 68%"
+                ></div>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">Building usage now</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg shadow p-4">
+              <h3 class="font-semibold mb-2">Recent Activities</h3>
+              <ul class="list-disc ml-5 text-gray-700" id="recent-activities">
+                <li>BIM model updated for North Hospital.</li>
+                <li>Sustainability report generated for Green Campus.</li>
+                <li>Scheduled maintenance for HVAC in Central Office Tower.</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4">
+              <h3 class="font-semibold mb-2">AI Suggestions</h3>
+              <ul class="space-y-2" id="ai-suggestions">
+                <li>
+                  🔧 Predictive maintenance recommended for HVAC system on floor
+                  3.
+                </li>
+                <li>
+                  💡 Optimize lighting schedules in common areas to save energy.
+                </li>
+                <li>🌱 Water consumption is higher than average this month.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- DIGITAL TWIN -->
+        <section id="digital-twin" class="spa-section mb-16 hidden">
+          <h2 class="text-3xl font-bold text-blue-700 mb-4">
+            Digital Twin – 3D Visualization
+          </h2>
+          <div
+            class="bg-gray-200 rounded-lg h-64 flex items-center justify-center text-gray-500 mb-4"
+          >
+            [A 3D building model would appear here. Demo only.]
+          </div>
+          <div class="mt-4">
+            <button
+              class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+              onclick="alert('3D Model loading is simulated in this demo.')"
+            >
+              Load 3D Model
+            </button>
+          </div>
+          <div class="mt-6 bg-white rounded-lg shadow p-4">
+            <h3 class="font-semibold mb-2">Model Information</h3>
+            <ul class="text-gray-700">
+              <li><strong>Source:</strong> Revit 2023</li>
+              <li><strong>Last updated:</strong> 2025-04-10</li>
+              <li><strong>Linked IoT devices:</strong> 42</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- IOT HUB -->
+        <section id="iot" class="spa-section mb-16 hidden">
+          <h2 class="text-3xl font-bold text-blue-700 mb-4">IoT Hub</h2>
+          <div class="bg-white rounded-lg shadow p-4 mb-6">
+            <h3 class="font-semibold mb-2">Connected Sensors</h3>
+            <table class="w-full text-left text-sm">
+              <thead>
+                <tr>
+                  <th class="py-2">Sensor</th>
+                  <th class="py-2">Location</th>
+                  <th class="py-2">Status</th>
+                  <th class="py-2">Last Value</th>
+                </tr>
+              </thead>
+              <tbody id="iot-sensors">
+                <tr>
+                  <td>Temperature</td>
+                  <td>Floor 1</td>
+                  <td><span class="text-green-600">Online</span></td>
+                  <td>22°C</td>
+                </tr>
+                <tr>
+                  <td>CO₂</td>
+                  <td>Meeting Room</td>
+                  <td><span class="text-green-600">Online</span></td>
+                  <td>420 ppm</td>
+                </tr>
+                <tr>
+                  <td>Humidity</td>
+                  <td>Greenhouse</td>
+                  <td><span class="text-green-600">Online</span></td>
+                  <td>55%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="bg-white rounded-lg shadow p-4">
+            <h3 class="font-semibold mb-2">Alerts</h3>
+            <ul class="list-disc ml-5 text-gray-700" id="iot-alerts">
+              <li>No active alerts. All systems normal.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ANALYTICS -->
+        <section id="analytics" class="spa-section mb-16 hidden">
+          <h2 class="text-3xl font-bold text-blue-700 mb-4">Analytics</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg shadow p-4">
+              <h3 class="font-semibold mb-2">Pattern Analysis</h3>
+              <p>
+                The system detected a peak in energy use every Monday morning,
+                likely due to HVAC startup after the weekend.
+              </p>
+              <div class="mt-2">
+                <button
+                  class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+                  onclick="alert('AI Optimization simulated!')"
+                >
+                  Run AI Optimization
+                </button>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow p-4">
+              <h3 class="font-semibold mb-2">Maintenance Prediction</h3>
+              <p>
+                Next recommended maintenance for air filters:
+                <span id="next-maintenance">2025-05-10</span>
+              </p>
+              <p class="mt-2 text-sm text-gray-500">
+                Based on usage patterns and sensor data.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SUSTAINABILITY -->
+        <section id="sustainability" class="spa-section mb-16 hidden">
+          <h2 class="text-3xl font-bold text-blue-700 mb-4">
+            Sustainability Panel
+          </h2>
+          <div
+            class="bg-white rounded-lg shadow p-4 flex flex-col md:flex-row md:space-x-8"
+          >
+            <div>
+              <p class="font-semibold">Carbon Footprint (YTD)</p>
+              <p class="text-lg text-gray-700" id="carbon-footprint">
+                2,100 kg CO₂
+              </p>
+            </div>
+            <div>
+              <p class="font-semibold">Certification</p>
+              <p class="text-lg text-green-700" id="certification">LEED Gold</p>
+            </div>
+            <div>
+              <p class="font-semibold">Water Usage (this month)</p>
+              <p class="text-lg text-blue-700" id="water-usage">12,000 L</p>
+            </div>
+          </div>
+          <div class="mt-6 bg-white rounded-lg shadow p-4">
+            <h3 class="font-semibold mb-2">Sustainability Goals</h3>
+            <ul class="list-disc ml-5 text-gray-700">
+              <li>Reduce energy consumption by 10% in 2025</li>
+              <li>Achieve LEED Platinum by 2027</li>
+              <li>Increase water reuse in landscaping</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- COMPLIANCE -->
+        <section id="compliance" class="spa-section mb-16 hidden">
+          <h2 class="text-3xl font-bold text-blue-700 mb-4">Compliance</h2>
+          <div class="bg-white rounded-lg shadow p-4">
+            <h3 class="font-semibold mb-2">Code Compliance Status</h3>
+            <ul class="list-disc ml-5 text-gray-700" id="compliance-list">
+              <li>
+                LEED Gold –
+                <span class="text-green-700 font-semibold">Passed</span>
+              </li>
+              <li>
+                BREEAM –
+                <span class="text-yellow-600 font-semibold">Under review</span>
+              </li>
+              <li>
+                Local building code –
+                <span class="text-green-700 font-semibold">Passed</span>
+              </li>
+            </ul>
+            <p class="mt-2 text-sm text-gray-500">
+              Automated compliance checks are run every week.
+            </p>
+          </div>
+        </section>
+
+        <!-- COLLABORATION -->
+        <section id="collab" class="spa-section mb-16 hidden">
+          <h2 class="text-3xl font-bold text-blue-700 mb-4">Collaboration</h2>
+          <div class="bg-white rounded-lg shadow p-4">
+            <p class="mb-2">Share comments and updates with your team.</p>
+            <input
+              type="text"
+              class="border rounded px-2 py-1 w-full"
+              placeholder="Type a comment and press Enter..."
+              id="collab-input"
+            />
+            <div id="collab-comments" class="mt-4 space-y-2"></div>
+          </div>
+          <div class="mt-6 bg-white rounded-lg shadow p-4">
+            <h3 class="font-semibold mb-2">Task Management</h3>
+            <ul class="list-disc ml-5 text-gray-700" id="collab-tasks">
+              <li>Review sustainability report draft</li>
+              <li>Schedule HVAC maintenance</li>
+              <li>Update BIM model with new sensor locations</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- FACILITY MANAGEMENT -->
+        <section id="facility" class="spa-section mb-16 hidden">
+          <h2 class="text-3xl font-bold text-blue-700 mb-4">
+            Facility Management
+          </h2>
+          <div class="bg-white rounded-lg shadow p-4 mb-6">
+            <h3 class="font-semibold mb-2">Spaces and Maintenance</h3>
+            <ul class="list-disc ml-5 text-gray-700" id="facility-list">
+              <li>Office 101 – Cleaning scheduled for 2025-04-25</li>
+              <li>Auditorium – HVAC maintenance on 2025-04-28</li>
+              <li>Parking – Lighting inspection on 2025-05-02</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-lg shadow p-4">
+            <h3 class="font-semibold mb-2">Space Utilization</h3>
+            <p class="mb-2">
+              Current occupancy: <span id="occupancy">68%</span>
+            </p>
+            <div class="h-2 bg-blue-100 rounded">
+              <div
+                class="h-2 bg-blue-500 rounded"
+                id="occupancy-bar"
+                style="width: 68%"
+              ></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="spa-section mb-16 hidden">
+          <h2 class="text-3xl font-bold text-blue-700 mb-4">Contact & Team</h2>
+          <div class="bg-white rounded-lg shadow p-8">
+            <p class="mb-2">
+              For more information, partnerships, or support, please contact us
+              at
+              <a
+                href="mailto:info@bimsynergy.com"
+                class="underline text-blue-700"
+                >info@bimsynergy.com</a
+              >.
+            </p>
+            <p class="mb-2">
+              BIMSynergy is developed by a multidisciplinary team passionate
+              about smart buildings, sustainability, and digital transformation.
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-white border-t mt-8 py-4 text-center text-sm text-gray-500"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4"
+      >
+        <span>© 2025 BIMSynergy. All rights reserved.</span>
+        <span>|</span>
+        <a href="#about" class="underline hover:text-blue-700">About</a>
+        <span>|</span>
+        <a href="#contact" class="underline hover:text-blue-700">Contact</a>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
